@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+</head>
+<body>
+    <h1>學號：91018106</h1>
+    <h1>姓名：張博翔</h1>
+
+    <a href="AR02-b.png" download>
+  <img id="map" src="AR02-b.png" alt="高雄市輕軌地圖" width="104" height="142" onclick="downloadMap()">
+</a>
+
+    <a href="https://raw.githubusercontent.com/91018106/2024-1-7-final-test-part-2/main/index.html" target="_blank">查看原始 HTML</a>
+
+    <script>
+        function downloadMap() {
+            var map = document.getElementById('map');
+            var link = document.createElement('a');
+            link.href = map.src;
+            link.download = 'Kaohsiung_Light_Rail_Map.jpg';
+            link.click();
+        }
+    </script>
+</body>
+</html>
